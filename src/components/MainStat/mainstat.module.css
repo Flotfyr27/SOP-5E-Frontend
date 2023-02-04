@@ -1,0 +1,11 @@
+.name {
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+}
+.score {
+    position: absolute;
+    top: 0.75rem;
+    left: 1rem;
+    font-size: xx-large;
+}
