@@ -2,6 +2,7 @@ import { Box, Container, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import React, { FC, useState } from "react";
 import MainStat from "./components/MainStat/MainStat";
+import Overview from "./pages/Overview";
 import { Stat, StatName } from "./types/Stats";
 
 const CharacterSheet: FC = () => {
@@ -17,14 +18,16 @@ const CharacterSheet: FC = () => {
 
     return (
     <Container>
+        <Typography variant="h2">Spheres of Power 5E</Typography>
         <Box width={"100%"} border={"1px solid black"}>
-    <Typography variant="h2">Spheres of Power 5E</Typography>
+    
         <Stack direction={"row"} spacing={2}>
             {abilityNames.map((name) => (
             <MainStat key={name.type} value={name}/>
             ))}
         </Stack>
         </Box>
+        <Overview />
     </Container>)
 }
 
