@@ -3,7 +3,7 @@ import SingleStatView from "../components/SingleStatView";
 
 const Overview: FC = () => {
   return (
-    <div className="columns-6">
+    <div className="rows-6">
       <SingleStatView />
       <SingleStatView />
       <SingleStatView />
